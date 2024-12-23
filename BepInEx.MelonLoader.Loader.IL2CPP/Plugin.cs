@@ -1,11 +1,13 @@
 ﻿using System;
-using BepInEx.IL2CPP;
+using BepInEx;
+using BepInEx.Logging;
+using BepInEx.Unity.IL2CPP;
 using MLCore = MelonLoader.Core;
 
 
 namespace BepInEx.MelonLoader.Loader.IL2CPP
 {
-    [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
+    [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
     public class Plugin : BasePlugin
     {
         public override void Load()
